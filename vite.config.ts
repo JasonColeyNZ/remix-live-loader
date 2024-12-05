@@ -9,7 +9,7 @@ export default defineConfig({
 		denyImports({}),
 		envOnlyMacros(),
 		reactRouter(),
-		// reactRouterHonoServer(),
+		reactRouterHonoServer(),
 
 		tsconfigPaths(),
 	],

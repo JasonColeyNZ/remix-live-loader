@@ -1,6 +1,6 @@
-import type { LoaderFunctionArgs } from "@remix-run/node";
+import type { LoaderFunctionArgs } from "react-router";
 import { createEventStream } from "~/utils/create-event-stream.server";
 
 export function loader({ request, params }: LoaderFunctionArgs) {
-  return createEventStream(request, params.listSlug!);
+	return createEventStream(request, params.listSlug || "");
 }
